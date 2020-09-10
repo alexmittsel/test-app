@@ -28,6 +28,8 @@ export const columns = [
     accessor: 'change',
     maxWidth: 100,
     className: 'Right',
+    sortType: (a, b) =>
+      parseFloat(a.values['change']) - parseFloat(b.values['change']),
     Cell: ({ value }) => (
       <ChangeValue positive={parseFloat(value) >= 0}>{value}</ChangeValue>
     ),
