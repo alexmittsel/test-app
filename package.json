@@ -6,14 +6,19 @@
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
+    "axios": "0.20.0",
+    "fuse.js": "6.4.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-scripts": "3.4.3"
+    "react-scripts": "3.4.3",
+    "react-table": "7.5.0",
+    "styled-components": "5.2.0"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "test": "jest",
+    "debug": "NODE_ENV=debug npm test",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -30,5 +35,10 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "babel-plugin-styled-components": "1.11.1",
+    "faker": "5.1.0",
+    "puppeteer": "5.2.1"
   }
 }
